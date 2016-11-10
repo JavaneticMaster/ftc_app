@@ -1,5 +1,7 @@
 package org.firstinspires.ftc.teamcode;
 
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import static org.firstinspires.ftc.teamcode.TechnoJacketsHardware.fullStop;
@@ -8,7 +10,10 @@ import static org.firstinspires.ftc.teamcode.TechnoJacketsHardware.fullStop;
  * Created by mvcsd on 11/9/2016.
  */
 
-public class Autonomous extends LinearOpMode {
+
+@Autonomous(name = "Corner Goal Autonomous", group = "Autonomous")
+@Disabled
+public class CornerGoalAutonomous extends LinearOpMode {
 
     TechnoJacketsHardware robot = new TechnoJacketsHardware();
 
