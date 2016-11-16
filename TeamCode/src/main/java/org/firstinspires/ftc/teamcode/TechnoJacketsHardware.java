@@ -35,8 +35,8 @@ public class TechnoJacketsHardware {
         hwMap = ahwMap;
 
         // Define and Initialize Motors
-        leftMotor = hwMap.dcMotor.get("left_drive");
-        rightMotor = hwMap.dcMotor.get("right_drive");
+        leftMotor = hwMap.dcMotor.get("leftMotor");
+        rightMotor = hwMap.dcMotor.get("rightMotor");
         shootMotorL = hwMap.dcMotor.get("shootMotorL");
         shootMotorR = hwMap.dcMotor.get("shootMotorR");
         sweeper = hwMap.dcMotor.get("sweeper");
