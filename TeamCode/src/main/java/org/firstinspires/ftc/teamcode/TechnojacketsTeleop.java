@@ -23,7 +23,7 @@ public class TechnojacketsTeleop extends OpMode {
         double leftSpeed;
         double rightSpeed;
 
-        leftSpeed = gamepad1.left_stick_y;
+        leftSpeed = -gamepad1.left_stick_y;
         rightSpeed = gamepad1.right_stick_y;
 
         robot.leftMotor.setPower(leftSpeed);
