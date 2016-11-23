@@ -14,10 +14,9 @@ public class TechnoJacketsHardware {
     /* Public OpMode members. */
     public DcMotor leftMotor;
     public DcMotor rightMotor;
-    public DcMotor shootMotorL;
-    public DcMotor shootMotorR;
+    public DcMotor shootMotor;
     public DcMotor sweeper;
-    public Servo buttonServo;
+    //public Servo buttonServo;
 
     public static final double fullStop = 0;
 
@@ -37,15 +36,14 @@ public class TechnoJacketsHardware {
         // Define and Initialize Motors
         leftMotor = hwMap.dcMotor.get("leftMotor");
         rightMotor = hwMap.dcMotor.get("rightMotor");
-        shootMotorL = hwMap.dcMotor.get("shootMotorL");
-        shootMotorR = hwMap.dcMotor.get("shootMotorR");
+        shootMotor = hwMap.dcMotor.get("shootMotor");
         sweeper = hwMap.dcMotor.get("sweeper");
+        //buttonServo = hwMap.servo.get("buttonServo");
 
         // Set all motors to zero power
         leftMotor.setPower(0);
         rightMotor.setPower(0);
-        shootMotorL.setPower(0);
-        shootMotorR.setPower(0);
+        shootMotor.setPower(0);
 
 
     }
